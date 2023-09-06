@@ -1,0 +1,220 @@
+@media(min-width:420px) and (max-width: 599px){
+    .contenedor{
+        margin: auto;
+    }
+    .barra{
+        margin-top: 4rem;
+        padding-left: 7%;
+    }    
+}
+
+@media(min-width:600px) and (max-width: 768px){
+    .contenedor{
+        margin: auto;
+    }
+    .barra{
+        margin-top: 4rem;
+        padding-left: 7%;
+    }    
+}
+
+.muebles-grid{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width:768px){
+    .muebles-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width:992px){
+    .muebles-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.mueble_image{
+    border-radius: 1rem;
+}
+
+.card_info{
+    border-radius: 1rem;
+}
+
+.mueble{
+    display: column;
+    flex-direction: row;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+
+.mueble .contenido{
+    padding: 2rem;
+}
+
+.mueble .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    text-align: center;
+}
+
+@media (max-width:557px){
+    .mueble .contenido h3{
+        font-size: 4rem;
+    }
+}
+
+.mueble .descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+@media (max-width:557px){
+    .mueble .titulo_mueble{
+        font-size: 3rem;
+    }
+    .mueble .descripcion{
+        font-size: 2rem;
+    }
+    .mueble .precio{
+        font-size: 8rem;
+    }
+}
+
+.mueble .precio{
+   color: var(--secondary);
+   font-size: 5rem;
+   margin: 0;
+   font-weight: 900;
+}
+
+.mueble .enlace{
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+@media (max-width:768px){
+    .mueble .enlace{
+        font-size: 2rem;
+        padding: 2rem;
+
+    }
+}
+
+.mueble .enlace:hover{
+    background-color: var(--primary);
+}
+
+.name_filter{
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.name_filter__bar{
+    display: flex;
+    margin:1rem 10px 0 10px ;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: -7rem;
+    border-radius: 15px;
+    box-shadow: 1px 1px 26px -1px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 1px 1px 26px -1px rgba(0,0,0,0.77);
+    -moz-box-shadow: 1px 1px 26px -1px rgba(0,0,0,0.77);
+    font-size: 2rem;
+}
+@media(min-width:300px) and (max-width: 419px){
+    .name_filter__bar{
+        margin-top: 0rem;
+        font-size: 1.2rem;
+        padding: 0;
+    }   
+}
+
+@media(min-width:420px) and (max-width: 599px){
+    .name_filter__bar{
+        margin-top: 2rem;
+    }  
+}
+
+@media(min-width:600px) and (max-width: 768px){
+    .name_filter__bar{
+      margin-top: 4rem;
+      font-size: 2.5rem;
+    }  
+}
+
+@media(min-width:769px) and (max-width: 992px){
+    .name_filter__bar{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }  
+ } 
+
+
+.name_filter button{
+color: var(--white);
+background-color: var(--primary);
+padding: 1rem;
+border: 1px solid var(--white);
+}
+
+.name_filter .first_button{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.name_filter .last_button{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.name_filter button:hover{
+    color: var(--primary);
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+}
+@media(min-width:300px) and (max-width: 419px){
+    .name_filter button{
+        margin: 0rem;
+    }  
+}
+
+@media(min-width:420px) and (max-width: 599px){
+    .name_filter button{
+        margin-top: 0rem;
+    }  
+}
+
+@media(min-width:600px) and (max-width: 768px){
+    .name_filter button{
+      margin-top: 0rem;
+    }  
+}
+
+.heading{
+    margin-bottom: 2rem;
+}

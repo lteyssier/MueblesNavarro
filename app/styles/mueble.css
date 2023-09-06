@@ -1,0 +1,230 @@
+@media(max-width:992px) {
+    .header{
+        display: none;
+    }
+
+}
+
+@media(min-width:993px) and (max-width: 1600px){
+    .header{
+      height: 20rem;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    .banner{
+      display: none;
+    }
+    
+}
+
+
+.mueble{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+@media(max-width:992px){
+    .mueble{
+       display: flex;
+       flex-direction: column;
+       box-sizing: inherit;
+       margin: 0;
+    }
+}
+
+.contenido{
+  padding-left: 1.5rem;
+}
+
+.mueble .contenido .title_spec{
+  font-weight: 700;
+}
+
+.mueble .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.mueble .descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.mueble .precio{
+   color: var(--secondary);
+   font-size: 4rem;
+   margin: 0;
+   font-weight: 900;
+}
+
+.card_buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+@media(min-width:300px) and (max-width: 419px){
+  .card_buttons{
+    flex-direction: column;
+    gap: 0rem;
+} 
+}
+
+
+.mueble .disponible{
+    background-color: #6CF59F;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+}
+
+.mueble .vendido{
+    background-color: #D64E3E;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+}
+
+.enlace_volver{
+    display: block;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+@media(min-width:300px) and (max-width: 419px){
+  .enlace_volver{
+    width: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+} 
+}
+
+.enlace_volver .enlace{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Carousel */
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+  }
+
+  @media(max-width:996px){
+    .carousel{
+        width: 100%;
+        height: auto;
+    }
+    .carousel img{
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+  .slide {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+  }
+  @media(max-width:992px){
+    .slide{
+        width: auto;
+        height: auto;
+    }
+  }
+  
+  .slide-hidden {
+    display: none;
+  }
+  
+  .arrow {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 4rem;
+    height: 4rem;
+    color: white;
+  }
+
+@media(min-width:300px) and (max-width: 419px){
+  .arrow{
+    width: 4rem;
+    height: 4rem;
+} 
+}
+
+@media(min-width:420px) and (max-width: 599px){
+  .arrow{
+    width: 6rem;
+    height: 6rem;
+} 
+}
+
+@media(min-width:600px) and (max-width: 768px){
+  .arrow{
+    width: 8rem;
+    height: 8rem;
+}
+}
+
+@media(min-width:769px) and (max-width: 992px){
+  .arrow{
+    width: 8rem;
+    height: 8rem;
+}
+}
+
+  
+  .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .arrow-left {
+    left: 3rem;
+  }
+  
+  .arrow-right {
+    right: 3rem;
+  }
+  
+  .indicators {
+    display: flex;
+    position: absolute;
+    bottom: 3rem;
+  }
+  
+  .indicator {
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+  .indicator-inactive {
+    background-color: grey;
+  }
+
