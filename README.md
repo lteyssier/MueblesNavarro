@@ -1,7 +1,3 @@
-# Welcome to Remix!
-
-- [Remix Docs](https://remix.run/docs)
-
 ## Development
 
 From your terminal:
@@ -46,13 +42,16 @@ Most importantly, this means everything in the `app/` directory, but if you've f
 - Any assets you've added/updated in `public/`
 - Any updated versions of root files such as `.eslintrc.js`, etc.
 
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+### How does it work.
+
+From Strapi backend, is capable to storage info about the product. interface designed to easily fill the data
+<img width="1100" alt="Captura de pantalla 2023-10-07 a la(s) 19 58 46" src="https://github.com/lteyssier/MueblesNavarro/assets/6034865/929bcd27-776b-4feb-887c-0e828b6b4263">
+
+Automatically upload the new data to main menu.
+<img width="1100" alt="Captura de pantalla 2023-10-07 a la(s) 19 37 33" src="https://github.com/lteyssier/MueblesNavarro/assets/6034865/db571192-4244-48bd-898a-a97596eea4fe">
+
+And each item has it's own page (react remix function)
+<img width="1000" alt="Captura de pantalla 2023-10-14 a la(s) 15 41 42" src="https://github.com/lteyssier/MueblesNavarro/assets/6034865/222f9f71-5225-4566-950e-6b2baef32a7a">
+
+
+
